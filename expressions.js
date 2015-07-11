@@ -56,18 +56,9 @@ if ((theTemperature > 75))
 
 var email;
 email = prompt("Please enter your email address.");
-email = confirm("Is this" + email + " correct? Ok for true, cancel if false.");
-if (email == true)
+alert("Is this" + email + " correct? y/n.");
 {
-    console.log("Yes this is your email address!")
+    if (email == y)
+        alert("Thank you for your entry!");
 }
-
-
-
-/* The weather using ternary conditional if/else */
-
-console.log("It is " + (theTemperature >= 90 ? "HOT!" : (theTemperature > 50 ? "NICE!" : "COLD!"));
-/**
- * Created by Miss_Jessica_Lynne on 6/17/15.
- */
 
