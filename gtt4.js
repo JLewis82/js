@@ -13,10 +13,7 @@
 //}
 //myRandomnum();
 
-/*using params with math.random*/
-
-
-
+/*using params with math.random
 
 //LOTTERY!!!!
 function myRandomnum1(min, max, num)
@@ -35,6 +32,7 @@ randomNum1 = Math.round(randomNum1);
 }
 myRandomnum1(1,10,5);
 myRandomnum1(1,100,5);
+*/
 
 //function myRandomnum()
 //{
@@ -68,15 +66,23 @@ function yourLottoNbrs(min, max, num)
     {//main bracket to run for()
         {//bracket for 1st for() statement --- repeat 5 more times
             for (var a = 0; a < num; a++)
-            {//nbr1
+            {
+                //nbr1
                 nbr1[a] = Math.random() * (max - min) + min;
                 nbr1[a] = Math.round(nbr1[a]);
+                //nbr2
+                nbr2[a] = Math.random() * (max - min) + min;
+                nbr2[a] = Math.round(nbr2[a]);
+                //nbr3
+                nbr3[a] = Math.random() * (max - min) + min;
+                nbr3[a] = Math.round(nbr3[a]);
+                //nbr4
+                nbr4[a] = Math.random() * (max - min) + min;
+                nbr4[a] = Math.round(nbr2[a]);
+
             }
-        }//end of bracket for 1st for() statement --- repeat 5 more times
-        return nbr1;
-
-        //BEGIN NBR2 BELOW STARTING WITH {
-
+            return nbr1;
+        }
 
 
 
