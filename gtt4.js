@@ -39,3 +39,28 @@ myRandomnum1(1,100,5);
 //alert(randomNum);
 //}
 //myRandomnum();
+
+
+/*simpler way to generate 6 random lottery numbers*/
+
+function yourLottoNbrs()
+{
+    var nbr1;
+        nbr1 = Math.floor(9 * Math.random());//random #1
+    var nbr2;
+        nbr2 = Math.floor(9 * Math.random());//random #2
+    var nbr3;
+        nbr3 = Math.floor(9 * Math.random());//random #3
+    var nbr4;
+        nbr4 = Math.floor(9 * Math.random());//random #4
+    var nbr5;
+        nbr5 = Math.floor(9 * Math.random());//random #5
+    var nbr6;
+        nbr6 = Math.floor(9 * Math.random());//random #6
+
+    alert("Your Lotto numbers for today are: " + nbr1 + " " + nbr2 + " " + nbr3 + " " +
+            nbr4 + " " + nbr5 + " " + nbr6 + " .");
+
+
+}
+yourLottoNbrs();
