@@ -14,6 +14,10 @@
 //myRandomnum();
 
 /*using params with math.random*/
+
+
+
+
 //LOTTERY!!!!
 function myRandomnum1(min, max, num)
 {
@@ -60,7 +64,5 @@ function yourLottoNbrs()
 
     alert("Your Lotto numbers for today are: " + nbr1 + " " + nbr2 + " " + nbr3 + " " +
             nbr4 + " " + nbr5 + " " + nbr6 + " .");
-
-
 }
 yourLottoNbrs();
