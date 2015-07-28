@@ -20,6 +20,7 @@
 
 //LOTTERY!!!!
 function myRandomnum1(min, max, num)
+
 {
 var randomNum1;
 randomNum1 = Math.random() * (max - min) + min; //this is not changable so remember Math.random //allows us to
@@ -47,22 +48,42 @@ myRandomnum1(1,100,5);
 
 /*simpler way to generate 6 random lottery numbers*/
 
-function yourLottoNbrs()
+function yourLottoNbrs(min, max, num)
 {
     var nbr1;
-        nbr1 = Math.floor(9 * Math.random());//random #1
+    nbr1 = Math.random() * (max - min) + min;
+    //nbr1 = Math.floor(9 * Math.random());//random #1
     var nbr2;
-        nbr2 = Math.floor(9 * Math.random());//random #2
+    nbr2 = Math.random() * (max - min) + min;
+    // nbr2 = Math.floor(9 * Math.random());//random #2
     var nbr3;
-        nbr3 = Math.floor(9 * Math.random());//random #3
+    nbr3 = Math.floor(9 * Math.random());//random #3
     var nbr4;
-        nbr4 = Math.floor(9 * Math.random());//random #4
+    nbr4 = Math.floor(9 * Math.random());//random #4
     var nbr5;
-        nbr5 = Math.floor(9 * Math.random());//random #5
+    nbr5 = Math.floor(9 * Math.random());//random #5
     var nbr6;
-        nbr6 = Math.floor(9 * Math.random());//random #6
+    nbr6 = Math.floor(9 * Math.random());//random #6
 
-    alert("Your Lotto numbers for today are: " + nbr1 + " " + nbr2 + " " + nbr3 + " " +
-            nbr4 + " " + nbr5 + " " + nbr6 + " .");
+    {//main bracket to run for()
+        {//bracket for 1st for() statement --- repeat 5 more times
+            for (var a = 0; a < num; a++)
+            {//nbr1
+                nbr1[a] = Math.random() * (max - min) + min;
+                nbr1[a] = Math.round(nbr1[a]);
+            }
+        }//end of bracket for 1st for() statement --- repeat 5 more times
+        return nbr1;
+
+        //BEGIN NBR2 BELOW STARTING WITH {
+
+
+
+
+
+
+    }//end of main bracket to run for()
 }
-yourLottoNbrs();
+yourLottoNbrs(1, 10, 5);
+alert("Your Lotto numbers for today are: " + nbr1 + " " + nbr2 + " " + nbr3 + " " +
+    nbr4 + " " + nbr5 + " " + nbr6 + " .");
