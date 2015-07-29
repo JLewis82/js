@@ -13,7 +13,7 @@
 //}
 //myRandomnum();
 
-/*using params with math.random
+/*using params with math.random*/
 
 //LOTTERY!!!!
 function myRandomnum1(min, max, num)
@@ -32,16 +32,17 @@ randomNum1 = Math.round(randomNum1);
 }
 myRandomnum1(1,10,5);
 myRandomnum1(1,100,5);
-*/
 
-//function myRandomnum()
-//{
-//var randomNum;
-//for
-//randomNum = Math.random(); //this is not changable so remember Math.random //allows us to
-//alert(randomNum);
-//}
-//myRandomnum();
+
+function myRandomnum(randomNum);
+{
+var aNum;
+for
+    {
+aNum = Math.random(); //this is not changable so remember Math.random //allows us to
+alert(randomNum);
+    }
+myRandomnum();
 
 
 /*simpler way to generate 6 random lottery numbers*/
