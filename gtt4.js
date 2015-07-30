@@ -20,9 +20,11 @@ function myRandomnum1(min, max, num)
 
 {
 var randomNum1;
+
 randomNum1 = Math.random() * (max - min) + min; //this is not changable so remember Math.random //allows us to
 randomNum1 = Math.round(randomNum1);
 //adding a loop
+
     for (var a = 0; a < num; a++)
     {
         randomNum1[a] = Math.random() * (max - min) + min;
@@ -32,6 +34,14 @@ randomNum1 = Math.round(randomNum1);
 }
 myRandomnum1(1,10,5);
 myRandomnum1(1,100,5);
+
+
+
+
+
+
+
+
 
 
 function myRandomnum(randomNum);
